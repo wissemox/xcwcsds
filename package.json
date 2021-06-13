@@ -58,13 +58,9 @@
  
   },
 
- "description": "a really cool app",
+ "description": "a really cool app"
 
- "engines": {
-   "node": "14.17.0",
-   "npm":  "7.15.0"
-   },
-   "proxy": "http://127.0.0.1:8000"
+ 
 }
 
   
