@@ -56,9 +56,7 @@
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.35"
  
-  },
-
- "description": "a really cool app"
+  }
 
  
 }
