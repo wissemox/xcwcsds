@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import {Container , Box , Typography , IconButton , AppBar ,Button } from '@material-ui/core'
 import {useDispatch , useSelector} from 'react-redux'
-import {registerUser} from '../../js/actions/authActions'
+
 import {Redirect} from 'react-router-dom'
 import RegisterStep4 from './RegisterStep4'
 const RegisterStep3 = ({setRedirectRegister2}) => {
@@ -19,10 +19,7 @@ const RegisterStep3 = ({setRedirectRegister2}) => {
     const[adresse , setadresse]=useState("")
     const[pays , setpays]=useState("")
     const[ville , setville]=useState("")
-    const RegisterUser =() =>{
     
-        dispatch(registerUser({ prenom:Prenom,email:email, adresse:adresse ,tel:"string",pays:pays,ville:pays,nom:"string",code_postal:150, username:name,password:password , role:role ,nom_communaute:Nomcommunauté,sexe:Sexe,date_naissance:DateNaissance}))
-    }
     const Goback =()=>{
         setRedirectRegister2(false)
     }
@@ -76,7 +73,7 @@ const RegisterStep3 = ({setRedirectRegister2}) => {
                             <button className="bg-red text-white rounded-full w-90 mr-8 h-30  	" onClick={Goback} >Precedent</button>
                             </Box>
                             <Box>
-                            <button  className="bg-red text-white rounded-full w-90 " onClick={RegisterUser}>Suivant</button> 
+                            <button  className="bg-red text-white rounded-full w-90 " >Suivant</button> 
                             </Box>
                         </Box>
                     </Container>

@@ -3,7 +3,6 @@ import React,{useEffect , useState} from 'react'
 import {Container , Box , Typography , IconButton , AppBar ,Button } from '@material-ui/core'
 import ModalComunite from '../Modal/ModelCommunite'
 import {useDispatch , useSelector} from 'react-redux'
-import {Getallcomunte} from '../../js/actions/authActions'
 import RegisterStep3 from './RegisterStep3.jsx'
 const RegisterStep2 = ({setRedirectRegister , RegisterFunction2,RedirectRegister2 ,setRedirectRegister2}) => {
     const dispatch =useDispatch()
@@ -29,9 +28,7 @@ const RegisterStep2 = ({setRedirectRegister , RegisterFunction2,RedirectRegister
         setBackGroundChange(true)
     } 
     // Get communte
-    useEffect(()=>{
-        dispatch(Getallcomunte()) 
-    },[])
+   
     // Onclick secture
     const Redirect03 =()=>{
         RegisterFunction2(Communte,Entreprise,Siret,NomCommunte)
